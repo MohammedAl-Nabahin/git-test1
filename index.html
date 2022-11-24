@@ -4,9 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Basic HTML Form</title>
+    <link rel="icon" href="image/form.png">
 </head>
 <body>
-    
+    <header>
+        <h1>HTML Form</h1>
+    </header>
+    <main>
+        <section>
+            <!-- Start From -->
+            <form>
+                <section id="Section-One">
+                 <!-- Start the name fieldset  -->
+                <fieldset>
+                    <legend>Name</legend> <br>
+                    <label for="firstName">
+                        First Name 
+                        <br><input type="text" id="firstName" name="firstName"> 
+                    </label>
+                    <br><br>
+                    <label for="lastName">
+                        Last Name
+                        <br><input type="text" id="lastName" name="lastName">
+                    </label>
+                    <br><br>
+                </fieldset>
+                <!-- End the name fieldset  -->
+                 </section>
+
+                <section id="Section-Two">
+                <!-- Start Other Questions fieldset  -->    
+                <fieldset>
+                    <legend>Other Questions</legend><br>
+                    <!-- Radio Input -->
+                    <label>Choose a drink:</label><br>
+                    <input type="radio" id="coffee" name="favDrink" value="coffee">
+                    <label for="coffee">coffee</label><br>
+                    <input type="radio" id="tea" name="favDrink" value="tea">
+                    <label for="tea">tea</label><br>
+                    <input type="radio" id="hotChocolate" name="favDrink" value="hot chocolate">
+                    <label for="hotChocolate">hot chocolate</label><br><br>
+                    <!-- CheckBox Inputs -->
+                    <label>What ice cream do you like?</label> <br>
+                    <input type="checkbox" id="chocolate" name="chocolate" value="chocolate">
+                    <label for="chocolate">Chocolate</label><br>
+                    <input type="checkbox" id="chocolatePudding" name="chocolate pudding" value="Chocolate Pudding">
+                    <label for="chocolatePudding">Chocolate Pudding</label><br>
+                    <input type="checkbox" id="chocolatePeanutButter" name="chocolate peanut butter" value="Chocolate Peanut Butter">
+                    <label for="chocolatePeanutButter">Chocolate Peanut Butter</label><br>
+                    <input type="checkbox" id="vanila" name="vanila" value="vanila">
+                    <label for="vanila">Vanila</label><br>
+                    <input type="checkbox" id="strawberry" name="strawberry" value="strawberry">    
+                    <label for="strawberry">Strawberry</label><br><br>
+                    <label for="Schools">Select a school:</label><br>
+                    <select id="Schools">
+                        <option value="Harverd">Harverd</option>
+                        <option value="MIT">MIT</option>
+                        <option value="Yeil">Yeil</option>
+                        <option value="Brinston">Brinston</option>
+                    </select><br><br>
+                    <label for="textArea">Please provide comments:</label><br>
+                    <textarea name="textarea" id="textArea" rows="5" cols="35"></textarea><br><br>
+                </fieldset>
+                <!-- End Other Questions fieldset  -->  
+                </section>
+                <br>
+                <input type="submit"><br><br>
+            </form>
+            <!-- End Form -->
+        </section>    
+    </main>
 </body>
 </html>
